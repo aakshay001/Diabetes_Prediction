@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
-from sklearn.metrics import r2_score, mean_absolute_error
+
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier  
 from sklearn.model_selection import GridSearchCV  
