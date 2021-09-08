@@ -1,9 +1,17 @@
 # Code for 'diabetes_main.py' file.
 
 # Importing the necessary Python modules.
-import streamlit as st
+# Import the necessary modules design the Decision Tree classifier
 import numpy as np
 import pandas as pd
+import streamlit as st
+from sklearn.metrics import r2_score, mean_absolute_error
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier  
+from sklearn.model_selection import GridSearchCV  
+from sklearn import tree
+from sklearn import metrics
+
 
 # Configure your home page by setting its title and icon that will be displayed in a browser tab.
 st.set_page_config(page_title = 'Early Diabetes Prediction Web App',
